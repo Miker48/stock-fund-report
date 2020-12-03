@@ -2,12 +2,12 @@ It's not convinient that to login to different finaicial institutions to check t
 
 1. install yahoo_fin
 
-pip3 install yahoo_fin
+   pip3 install yahoo_fin
 
 2. install pandas
 
- pip3 install pandas
+   pip3 install pandas
 
 3. install request_html
 
-pip3 install requests_html
+   pip3 install requests_html
