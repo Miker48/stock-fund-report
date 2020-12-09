@@ -3,7 +3,7 @@ Getting tired to login to different finaicial institutions to check the stocks, 
 <img src=https://github.com/Miker48/stock-fund-report/blob/main/financial-report.png>
 
  Here are the main steps for setting-up MariaDB and Grafana on Centos 8:
-<h2>1. Install Python moduke, and download the python scripts </h2>
+<h2>1. Install Python module, and download the python scripts </h2>
    1.1 install python modules: yahoo_fin, pandas, and request_html
 
       pip3 install yahoo_fin
