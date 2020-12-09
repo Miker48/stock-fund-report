@@ -16,8 +16,8 @@ Getting tired to login to different finaicial institutions to check the stocks, 
    
    1.4 setup the cronjob like this
       
-     05 19 * * * /home/miker/investment/stock-report.py > /home/miker/investment/daily-reports/$(date +\%F)
-     25 19 * * * /home/miker/investment/load-data.sh /home/miker/investment/daily-reports/$(date +\%F)
+     05 19 * * 1-5 /home/miker/investment/stock-report.py > /home/miker/investment/daily-reports/$(date +\%F)
+     25 19 * * 1-5 /home/miker/investment/load-data.sh /home/miker/investment/daily-reports/$(date +\%F)
    
 
 <h2>2. Install / Config Mariadb</h2>
