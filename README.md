@@ -4,7 +4,7 @@ Getting tired to login to different finaicial institutions to check the stocks, 
 
 How to set it up:
 
-1. install python modules: yahoo_fin, pandas, and request_html
+   1. install python modules: yahoo_fin, pandas, and request_html
 
    pip3 install yahoo_fin
    pip3 install pandas
