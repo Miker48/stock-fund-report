@@ -10,7 +10,7 @@ Getting tired to login to different finaicial institutions to check the stocks, 
       pip3 install pandas
       pip3 install requests_html
    
-   1.2 downloadd the profile "my_investments" 
+   1.2 download the profile "my_investments" 
    
    1.3 download the python script "stock-report.py" and "load-data.sh"
    
