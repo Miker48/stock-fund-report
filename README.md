@@ -11,8 +11,13 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
       pip3 install yahoo_fin
       pip3 install pandas
       pip3 install requests_html
+      
+   1.2 create directory for this tool
    
-   1.2 Create the profile "my_investments" like the following
+       mkdir /home/miker/investment
+       cd /home/miker/investment
+       
+   1.3 Create the profile "my_investments" like the following
    
         ##########################################################
         # Format
@@ -25,17 +30,16 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
         TSLA 50  15000 stock Fidelity Tom Roth
         VGHCX 100 20000 Fund Vanguard Tom IRA
 
-      
    
-   1.3 download the python script "stock-report.py" and "load-data.sh"
+   1.4 download the python script "stock-report.py" and "load-data.sh"
    
       curl https://github.com/Miker48/stock-fund-report/blob/main/stock-report.py > stock-report.py 
       curl https://github.com/Miker48/stock-fund-report/blob/main/load-data.sh > load-data.sh
    
-   1.4 setup the cronjob like this
+   1.5 setup the cronjob like this so that if will automatically downliad the data, and upload it to the mysql DB every weekday 
       
-     05 19 * * 1-5 /home/miker/investment/stock-report.py > /home/miker/investment/daily-reports/$(date +\%F)
-     25 19 * * 1-5 /home/miker/investment/load-data.sh /home/miker/investment/daily-reports/$(date +\%F)
+      05 19 * * 1-5 /home/miker/investment/stock-report.py > /home/miker/investment/daily-reports/$(date +\%F)
+      25 19 * * 1-5 /home/miker/investment/load-data.sh /home/miker/investment/daily-reports/$(date +\%F)
    
 
 <h2>2. Install / Config Mariadb</h2>
