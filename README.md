@@ -12,7 +12,19 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
       pip3 install pandas
       pip3 install requests_html
    
-   1.2 download the profile "my_investments" 
+   1.2 Create the profile "my_investments" like the following
+        ##########################################################
+        # Format
+        # symbol # Qty # cost # Asset # Institution # Owner # Type
+        #   Asset: [stock|Fund|ETF]
+        #   Institution : [ETrade|TDAMeritrade|Fidelity|Vanguard|...]
+        #   Type: [Regular|IRA|ROTH|401K]
+        ##########################################################
+        AAPL 100 10000 stock TDAmeritrade Tom Regular
+        TSLA 50  15000 stock Fidelity Tom Roth
+        VGHCX 100 20000 Fund Vanguard Tom IRA
+
+      
    
    1.3 download the python script "stock-report.py" and "load-data.sh"
    
