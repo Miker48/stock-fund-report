@@ -21,13 +21,15 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
    
         ##########################################################
         # Format
-        # symbol # Qty # cost # Asset # Institution # Owner # Type
+        #   symbol Qty cost Asset Institution Owner Type
+        # 
+        #   Use space to seperate the fields
         #   Asset: [stock|Fund|ETF]
         #   Institution : [ETrade|TDAMeritrade|Fidelity|Vanguard|...]
         #   Type: [Regular|IRA|ROTH|401K]
         ##########################################################
         AAPL 100 10000 stock TDAmeritrade Tom Regular
-        TSLA 50  15000 stock Fidelity Tom Roth
+        TSLA 50 15000 stock Fidelity Tom Roth
         VGHCX 100 20000 Fund Vanguard Tom IRA
 
    
