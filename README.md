@@ -107,12 +107,13 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
 
     change password and setup data source
     setting ---> "Data Sources" ---> "Add Data Source" ---> select "MySQL" ---> fill the following fields under "MySQL Connection", 
-    "Host" "Database" "User" "Password" ---> Click "Save & Test"
+    "Host" "Database" (should be investments here) "User" "Password" ---> Click "Save & Test"
     
    <img src=https://github.com/Miker48/Expense-project/blob/master/Setup-Datasource.png>
+   
 3.4 Download the grafana dashboard code
 
-    curl https://raw.githubusercontent.com/Miker48/Expense-project/master/Expense.json > Expense.json
+    curl https://raw.githubusercontent.com/Miker48/Expense-project/master/Expense.json > financial-report.json
 
 3.5 import grafana dashboard 
 
