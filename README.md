@@ -13,6 +13,7 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
       pip3 install requests_html
    
    1.2 Create the profile "my_investments" like the following
+   
         ##########################################################
         # Format
         # symbol # Qty # cost # Asset # Institution # Owner # Type
