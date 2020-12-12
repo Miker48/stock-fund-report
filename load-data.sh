@@ -3,7 +3,7 @@
 #sed -i 's/ \+/:/g' $1
 sed -i 's/ //g' $1
 
-mysql -u root -ptest1234 <<EOF
+mysql -u root -pxxx <<EOF
 #create database if not exists investments;
 #CREATE USER 'grafanaRO'@'192.168.1.238' IDENTIFIED BY 'xxxxx';
 #GRANT SELECT ON investments.* TO 'grafanaRO'@'192.168.1.238';
