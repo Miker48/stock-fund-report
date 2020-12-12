@@ -29,6 +29,9 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
    
    1.3 download the python script "stock-report.py" and "load-data.sh"
    
+      curl https://github.com/Miker48/stock-fund-report/blob/main/stock-report.py > stock-report.py 
+      curl https://github.com/Miker48/stock-fund-report/blob/main/load-data.sh > load-data.sh
+   
    1.4 setup the cronjob like this
       
      05 19 * * 1-5 /home/miker/investment/stock-report.py > /home/miker/investment/daily-reports/$(date +\%F)
@@ -60,20 +63,16 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
      mysql -u root -pxxxxx   # if we run mysql_secure_installation, and set root password
      or
      mysql  # if not run mysql_secure_installation
-      >create database spending;
+      >create database investments;
       >CREATE USER 'grafanaRO'@'localhost' IDENTIFIED BY 'mypassword';
-      >GRANT SELECT ON spending.* TO 'grafanaRO'@'localhost';
-     
-      
- 2.4 download the sample-data
+      >GRANT SELECT ON investments.* TO 'grafanaRO'@'localhost';
 
-    curl https://raw.githubusercontent.com/Miker48/Expense-project/master/sample-data > sample-data
  
- 2.5 create table and load sample data
+ 2.4 create table and load sample data
  
-    mysql -uroot -pxxxxx spending <<EOF
-    create table if not exists bill ( Year char(4) NOT NULL, Month char(3) NOT NULL, Name varchar(25) NOT NULL, Amount float(10,2) NOT NULL, Paid varchar(3) NOT NULL, PRIMARY KEY (Year, Month, Name));
-    load data local infile 'sample-data' into table bill fields terminated by ':';
+    mysql -uroot -pxxxxx investments <<EOF
+    create table if not exists stock (Year int(4) NOT NULL, Month int(2) NOT NULL, Day int(2) NOT NULL, Symbol varchar(6) NOT NULL, Qty float(10,2) NOT NULL, Price float(10,2) NOT NULL, Cost float(10,2) NOT NULL, Mkt_Value float(10,2) NOT NULL, Daily_Change float(10,2) NOT NULL, Daily_Change_Ratio float(6,2) NOT NULL, Total_Gain float(10,2) NOT NULL, Total_Gain_Ratio float(6,2) NOT NULL, One_Year_R varchar(20), Asset varchar(25) NOT NULL, Broker varchar(20) NOT NULL, Owner varchar(10) NOT NULL, Category varchar(10) NOT NULL, PRIMARY KEY (Year, Month, Day, Symbol, Broker, Owner, Category));
+    load data local infile my_investments into table stock fields terminated by ':';
     EOF
 
 
