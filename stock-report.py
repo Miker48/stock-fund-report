@@ -5,7 +5,7 @@ import pandas as pd
 import datetime
 
 
-with open("/home/paul/investment/my-investments") as file:
+with open("/home/miker/investment/my-investments") as file:
   for line in file:
     if not line.startswith("#"):
       # convert each line to a sublist
