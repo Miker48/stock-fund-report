@@ -113,7 +113,7 @@ This project will allow users to view all their stocks, ETFs, and mutual funds i
    
 3.4 Download the grafana dashboard code
 
-    curl https://raw.githubusercontent.com/Miker48/Expense-project/master/Expense.json > financial-report.json
+    curl https://github.com/Miker48/stock-fund-report/blob/main/Investment-Report-v1.json> investment-report.json
 
 3.5 import grafana dashboard 
 
