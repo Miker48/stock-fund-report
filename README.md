@@ -1,4 +1,6 @@
-Getting tired to login to different finaicial institutions to check the stocks, ETFs, or mutual funds everyday? I came up with this tool to solve this issue. It' is based on a profile, and the python script will read the profile, and get the data from yahoo finance, write it to mysql DB, and then we query the data from DB and generate the nice report in Grafana like below.
+Getting tired to login to different finaicial institutions to check the stocks, ETFs, or mutual funds everyday? I came up with this tool to solve this issue. It is based on a profile, and the python script will read the profile, and get the data from yahoo finance, write it to mysql DB, and then we query the data from DB and generate the nice report in Grafana like below.
+
+This project will allow users to view all their stocks, ETFs, and mutual funds in a single page. The program runs API calls in fiance.yahoo.com and morningstar.com to grab the data for an inputted profile before sending the data into a mysql database to be queried for a report later.
 
 <img src=https://github.com/Miker48/stock-fund-report/blob/main/financial-report.png>
 
