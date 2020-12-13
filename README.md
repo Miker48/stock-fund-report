@@ -119,5 +119,5 @@ Getting tired of having to login to multiple financial institutions everyday to 
 
     click "Grafana" icon on the top left ---> Home ---> Import Dashboard ---> upload .json file ---> and select the file dowbloaded above ---> click "Import"
    
-Now you have the nice single pane of glass view of investment report! 
+Now you have the nice single pane of glass view of your investments report! 
   
