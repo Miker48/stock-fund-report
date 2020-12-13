@@ -1,4 +1,4 @@
-Getting tired of logging into different finaicial institutions everyday to check on your stocks, ETFs, or mutual funds? I created this utility to make this process more convenient. In this project, we will make a profile containing the financial assets we want to view, a python script to read the profile and to retrieve data from websites such as fiance.yahoo.com, a MySQL data base to store the data, and a dashboard in Grafana to generate a report of the profile.
+Getting tired of having to login to multiple financial institutions everyday to check on your stocks, ETFs, or mutual funds? I created this utility to make this process more convenient. In this project, we will make a profile containing the financial assets we want to view, a python script to read the profile and to retrieve data from websites such as fiance.yahoo.com, a MySQL data base to store the data, and a dashboard in Grafana to generate a report of the profile.
 
 <img src=https://github.com/Miker48/stock-fund-report/blob/main/financial-report.png>
 
